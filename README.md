@@ -1,10 +1,10 @@
 # deluge_cmd
 
 
-[![pypi](https://img.shields.io/pypi/v/deluge_cmd.svg)](https://pypi.org/project/deluge_cmd/)
-[![python](https://img.shields.io/pypi/pyversions/deluge_cmd.svg)](https://pypi.org/project/deluge_cmd/)
-[![Build Status](https://github.com/chrisbc/deluge_cmd/actions/workflows/dev.yml/badge.svg)](https://github.com/chrisbc/deluge_cmd/actions/workflows/dev.yml)
-[![codecov](https://codecov.io/gh/chrisbc/deluge_cmd/branch/main/graphs/badge.svg)](https://codecov.io/github/chrisbc/deluge_cmd)
+[![pypi](https://img.shields.io/pypi/v/deluge_cmd.svg)](https://pypi.org/project/deluge-cmd/)
+[![python](https://img.shields.io/pypi/pyversions/deluge_cmd.svg)](https://pypi.org/project/deluge-cmd/)
+[![Build Status](https://github.com/chrisbc/deluge-cmd/actions/workflows/dev.yml/badge.svg)](https://github.com/chrisbc/deluge_cmd/actions/workflows/dev.yml)
+[![codecov](https://codecov.io/gh/chrisbc/deluge_cmd/branch/main/graphs/badge.svg)](https://codecov.io/github/chrisbc/deluge-cmd)
 
 
 
