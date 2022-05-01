@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://chrisbc.github.io/deluge_cmd/</loc>
+         <lastmod>2022-05-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chrisbc.github.io/deluge_cmd/api/</loc>
+         <lastmod>2022-05-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chrisbc.github.io/deluge_cmd/changelog/</loc>
+         <lastmod>2022-05-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chrisbc.github.io/deluge_cmd/contributing/</loc>
+         <lastmod>2022-05-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chrisbc.github.io/deluge_cmd/installation/</loc>
+         <lastmod>2022-05-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chrisbc.github.io/deluge_cmd/usage/</loc>
+         <lastmod>2022-05-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
