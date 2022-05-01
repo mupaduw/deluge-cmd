@@ -1,7 +1,7 @@
 [tool]
 [tool.poetry]
 name = "deluge-cmd"
-version = "0.1.0"
+version = "0.1.1"
 homepage = "https://github.com/mupaduw/deluge-cmd"
 description = "cli tools to manage deluge sd card contents."
 authors = ["Chris B Chamberlain <chrisbc@artisan.co.nz>"]
