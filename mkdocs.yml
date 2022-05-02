@@ -1,13 +1,12 @@
-site_name: deluge_cmd
-site_url: https://chrisbc.github.io/deluge_cmd
-repo_url: https://github.com/chrisbc/deluge_cmd
-repo_name: chrisbc/deluge_cmd
+site_name: deluge-cmd
+site_url: https://mupaduw.github.io/deluge-cmd
+repo_url: https://github.com/mupaduw/deluge-cmd
+repo_name: mupaduw/deluge-cmd
 #strict: true
 nav:
   - Home: index.md
   - Installation: installation.md
   - Usage: usage.md
-  - Modules: api.md
   - Contributing: contributing.md
   - Changelog: changelog.md
 theme:
@@ -54,16 +53,16 @@ plugins:
         - deluge_cmd
 extra:
   social:
-    - icon: fontawesome/brands/twitter
-      # replace with your own tweet link below
-      link: https://github.com/waynerv/cookiecutter-pypackage
-      name: Tweet
-    - icon: fontawesome/brands/facebook
-      # replace with your own facebook link below
-      link: https://github.com/waynerv/cookiecutter-pypackage
-      name: Facebook
+    # - icon: fontawesome/brands/twitter
+    #   # replace with your own tweet link below
+    #   link: https://github.com/waynerv/cookiecutter-pypackage
+    #   name: Tweet
+    # - icon: fontawesome/brands/facebook
+    #   # replace with your own facebook link below
+    #   link: https://github.com/waynerv/cookiecutter-pypackage
+    # name: Facebook
     - icon: fontawesome/brands/github
-      link: https://github.com/chrisbc/deluge_cmd
+      link: https://github.com/mupaduw/deluge-cmd
       name: Github
     - icon: material/email
       link: "mailto:chrisbc@artisan.co.nz"

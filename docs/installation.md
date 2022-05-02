@@ -2,33 +2,33 @@
 
 ## Stable release
 
-To install deluge_cmd, run this command in your
+To install deluge-cmd, run this command in your
 terminal:
 
 ``` console
-$ pip install deluge_cmd
+$ pip install deluge-cmd
 ```
 
-This is the preferred method to install deluge_cmd, as it will always install the most recent stable release.
+This is the preferred method to install deluge-cmd, as it will always install the most recent stable release.
 
 If you don't have [pip][] installed, this [Python installation guide][]
 can guide you through the process.
 
 ## From source
 
-The source for deluge_cmd can be downloaded from
+The source for deluge-cmd can be downloaded from
 the [Github repo][].
 
 You can either clone the public repository:
 
 ``` console
-$ git clone git://github.com/chrisbc/deluge_cmd
+$ git clone git://github.com/chrisbc/deluge-cmd
 ```
 
 Or download the [tarball][]:
 
 ``` console
-$ curl -OJL https://github.com/chrisbc/deluge_cmd/tarball/master
+$ curl -OJL https://github.com/chrisbc/deluge-cmd/tarball/master
 ```
 
 Once you have a copy of the source, you can install it with:
