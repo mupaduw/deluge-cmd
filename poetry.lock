@@ -1039,7 +1039,7 @@ test = []
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8,<4.0"
-content-hash = "a1f8cac6adcbbef1d08a77e68fb170dd0e48b09eef8bd0dffd72336a620d45c5"
+content-hash = "af0b8acfe6a656996def039b481bd96271b79af3e89a558a0e9373861b9832a2"
 
 [metadata.files]
 astunparse = [
