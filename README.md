@@ -1,4 +1,4 @@
-# deluge_cmd
+# deluge-cmd
 
 
 [![pypi](https://img.shields.io/pypi/v/deluge-cmd.svg)](https://pypi.org/project/deluge-cmd/)

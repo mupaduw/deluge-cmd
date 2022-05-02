@@ -9,7 +9,7 @@ You can contribute in many ways:
 
 ### Report Bugs
 
-Report bugs at https://github.com/chrisbc/deluge_cmd/issues.
+Report bugs at https://github.com/chrisbc/deluge-cmd/issues.
 
 If you are reporting a bug, please include:
 
@@ -29,13 +29,13 @@ and "help wanted" is open to whoever wants to implement it.
 
 ### Write Documentation
 
-deluge_cmd could always use more documentation, whether as part of the
-official deluge_cmd docs, in docstrings, or even on the web in blog posts,
+deluge-cmd could always use more documentation, whether as part of the
+official deluge-cmd docs, in docstrings, or even on the web in blog posts,
 articles, and such.
 
 ### Submit Feedback
 
-The best way to send feedback is to file an issue at https://github.com/chrisbc/deluge_cmd/issues.
+The best way to send feedback is to file an issue at https://github.com/chrisbc/deluge-cmd/issues.
 
 If you are proposing a feature:
 
@@ -46,13 +46,13 @@ If you are proposing a feature:
 
 ## Get Started!
 
-Ready to contribute? Here's how to set up `deluge_cmd` for local development.
+Ready to contribute? Here's how to set up `deluge-cmd` for local development.
 
-1. Fork the `deluge_cmd` repo on GitHub.
+1. Fork the `deluge-cmd` repo on GitHub.
 2. Clone your fork locally
 
     ```
-    $ git clone git@github.com:your_name_here/deluge_cmd.git
+    $ git clone git@github.com:your_name_here/deluge-cmd.git
     ```
 
 3. Ensure [poetry](https://python-poetry.org/docs/) is installed.
@@ -77,6 +77,8 @@ Ready to contribute? Here's how to set up `deluge_cmd` for local development.
     $ poetry run tox
     ```
 
+   The flake8 linter will complain if your docstrings don't follow [the google docstrings style](https://gist.github.com/redlotus/3bc387c2591e3e908c9b63b97b11d24e).
+
 7. Commit your changes and push your branch to GitHub:
 
     ```
@@ -96,7 +98,7 @@ Before you submit a pull request, check that it meets these guidelines:
    your new functionality into a function with a docstring, and add the
    feature to the list in README.md.
 3. The pull request should work for Python 3.6, 3.7, 3.8 and 3.9. Check
-   https://github.com/chrisbc/deluge_cmd/actions
+   https://github.com/chrisbc/deluge-cmd/actions
    and make sure that the tests pass for all supported Python versions.
 
 ## Tips
