@@ -1,4 +1,5 @@
 """Helper functions module."""
+# flake8: noqa
 
 
 def list_songs(card, args):

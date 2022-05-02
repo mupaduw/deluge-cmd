@@ -1,14 +1,14 @@
-"""
-Main cmd list deluge_card contents of folder(s) specified.
-"""
+"""Main dsd script."""
+
 import argparse
 
 from deluge_card import list_deluge_fs
 
-from deluge_cmd.deluge_cmd import list_samples, list_song_samples, list_songs
+from .dsd_helpers import list_samples, list_song_samples, list_songs
 
-if __name__ == '__main__':
-    # print('dc_manifest')
+
+def main():
+    """Main entrypoint."""
     parser = argparse.ArgumentParser(description='list deluge_card contents')
     parser.add_argument('folder', type=str, nargs='+', help='one or more folder to check')
     parser.add_argument(
@@ -30,3 +30,7 @@ if __name__ == '__main__':
                     list_samples(c, args)
                 if args.list == 'S':
                     list_song_samples(c, args)
+
+
+if __name__ == '__main__':
+    main()  # pragma: no cover
