@@ -2,4 +2,4 @@
 
 __author__ = """Chris B Chamberlain"""
 __email__ = 'chrisbc@artisan.co.nz'
-__version__ = '0.1.3'
+__version__ = '0.1.4'
