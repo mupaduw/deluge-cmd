@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 
 ## [0.1.2] - 2022-05-02
+### Fixed
+- Script entry point `dsd`.
+
+## [0.1.2] - 2022-05-02
 ### Changed
 - Removed dev-requirements from the published package.
 - Depends on deluge-card >= 0.2.3.
