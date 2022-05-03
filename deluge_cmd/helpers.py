@@ -11,6 +11,7 @@ def list_songs(card, args):
     for s in songs:
         print(f'  {s} key {s.scale()} tempo {s.tempo()}')
 
+
 def list_samples(card, args):
     samples = list(card.samples(args.pattern))
     if args.summary | args.verbose:
@@ -19,6 +20,7 @@ def list_samples(card, args):
         return
     for sa in samples:
         print(f'  {sa}')
+
 
 def list_song_samples(card, args):
     songs = list(card.songs())
