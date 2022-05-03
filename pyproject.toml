@@ -24,8 +24,7 @@ packages = [
 ]
 
 [tool.poetry.scripts]
-deluge_cmd = 'deluge_cmd.cli:main'
-dsd = 'deluge_cmd.dsd:main'
+dsd = 'deluge_cmd.deluge_dsd:main'
 
 [tool.poetry.dev-dependencies]
 

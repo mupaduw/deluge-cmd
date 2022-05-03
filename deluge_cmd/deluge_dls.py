@@ -2,17 +2,17 @@
 
 import argparse
 from deluge_card import list_deluge_fs
-from dsd_helpers import list_samples, list_song_samples, list_songs
+from helpers import list_samples, list_song_samples, list_songs
 
 
 def main():
     """Main entrypoint."""
-    parser = argparse.ArgumentParser(description='list deluge FS contents')
+    parser = argparse.ArgumentParser(description='deluge_dls.py (dls)  - list deluge FS contents')
 
     parser.add_argument('root',
-        help='root folder to check')
+        help='root folder to begin ls from')
     parser.add_argument('type', 
-        help='one of of s=songs, a=samples, S=song_samples (future: K=Kit, I=instrument)')
+        help='one of of s=songs, a=samples, ss=song_samples (future: k=kits, i=instruments)')
     parser.add_argument("-v", "--verbose", help="increase output verbosity", action="store_true")
     parser.add_argument("-s", "--summary", help="summarise output", action="store_true")
     parser.add_argument('-p', '--pattern', help='pattern')
@@ -23,7 +23,6 @@ def main():
 
     if args.debug: print(f"Args: {args}")
 
-    # for fname in args.root:
     card_imgs = list_deluge_fs(args.root)
     if len(card_imgs):
         for c in card_imgs:
