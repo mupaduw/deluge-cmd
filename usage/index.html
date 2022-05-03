@@ -276,6 +276,67 @@
     Usage
   </a>
   
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dls" class="md-nav__link">
+    dls
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#future" class="md-nav__link">
+    future
+  </a>
+  
+    <nav class="md-nav" aria-label="future">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dmkfs" class="md-nav__link">
+    dmkfs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dcp" class="md-nav__link">
+    dcp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dmv" class="md-nav__link">
+    dmv
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drm" class="md-nav__link">
+    drm
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about-tldr" class="md-nav__link">
+    About TLDR
+  </a>
+  
 </li>
       
     </ul>
@@ -345,6 +406,67 @@
     Usage
   </a>
   
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dls" class="md-nav__link">
+    dls
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#future" class="md-nav__link">
+    future
+  </a>
+  
+    <nav class="md-nav" aria-label="future">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dmkfs" class="md-nav__link">
+    dmkfs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dcp" class="md-nav__link">
+    dcp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dmv" class="md-nav__link">
+    dmv
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drm" class="md-nav__link">
+    drm
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about-tldr" class="md-nav__link">
+    About TLDR
+  </a>
+  
 </li>
       
     </ul>
@@ -368,9 +490,36 @@
   <h1>Usage</h1>
 
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p>To use deluge-cmd in a project</p>
-<div class="highlight"><pre><span></span><code>import deluge_cmd
-</code></pre></div>
+<p>Installing deluge-cmd will make the following available on your system:</p>
+<h3 id="dls">dls<a class="headerlink" href="#dls" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>dls</strong> (also <strong>deluge_ls</strong>) lists objects such as Songs Samples, and SongSamples
+found on a Deluge Folder System (DFS).
+It's modelled after <strong><a href="https://tldr.ostera.io/ls">ls</a></strong> (or <strong>dir</strong>).</p>
+</blockquote>
+<ul>
+<li>Print all the songs on a DFS: </li>
+</ul>
+<p><code>dls ~/Music/DELUGE/02 songs</code></p>
+<ul>
+<li>List songs where the path contains "002", "003" or "004" :</li>
+</ul>
+<p><code>dls ~/Music/DELUGE/02 songs -p *00[2-4]*</code></p>
+<ul>
+<li>List samples where the path contains folder "/Kick/" :</li>
+</ul>
+<p><code>dls ~/Music/DELUGE/02 samples -p **/Kick/**</code></p>
+<ul>
+<li>List the song samples where the path contains folder "Artists" :</li>
+</ul>
+<p><code>dls ~/Music/DELUGE/02 song_samples -p **/Artists/**</code></p>
+<h3 id="future">future<a class="headerlink" href="#future" title="Permanent link">&para;</a></h3>
+<h4 id="dmkfs">dmkfs<a class="headerlink" href="#dmkfs" title="Permanent link">&para;</a></h4>
+<h4 id="dcp">dcp<a class="headerlink" href="#dcp" title="Permanent link">&para;</a></h4>
+<h4 id="dmv">dmv<a class="headerlink" href="#dmv" title="Permanent link">&para;</a></h4>
+<h4 id="drm">drm<a class="headerlink" href="#drm" title="Permanent link">&para;</a></h4>
+<h2 id="about-tldr">About TLDR<a class="headerlink" href="#about-tldr" title="Permanent link">&para;</a></h2>
+<p>This page uses the <a href="https://tldr.ostera.io/">TLDR format</a></p>
 
               
             </article>

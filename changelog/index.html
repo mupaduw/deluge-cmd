@@ -309,6 +309,33 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#020---2022-05-04" class="md-nav__link">
+    [0.2.0] - 2022-05-04
+  </a>
+  
+    <nav class="md-nav" aria-label="[0.2.0] - 2022-05-04">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#014---2022-05-02" class="md-nav__link">
     [0.1.4] - 2022-05-02
   </a>
@@ -344,14 +371,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#changed" class="md-nav__link">
+  <a href="#changed_1" class="md-nav__link">
     Changed
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#added" class="md-nav__link">
+  <a href="#added_1" class="md-nav__link">
     Added
   </a>
   
@@ -371,7 +398,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#added_1" class="md-nav__link">
+  <a href="#added_2" class="md-nav__link">
     Added
   </a>
   
@@ -429,6 +456,33 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#020---2022-05-04" class="md-nav__link">
+    [0.2.0] - 2022-05-04
+  </a>
+  
+    <nav class="md-nav" aria-label="[0.2.0] - 2022-05-04">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#014---2022-05-02" class="md-nav__link">
     [0.1.4] - 2022-05-02
   </a>
@@ -464,14 +518,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#changed" class="md-nav__link">
+  <a href="#changed_1" class="md-nav__link">
     Changed
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#added" class="md-nav__link">
+  <a href="#added_1" class="md-nav__link">
     Added
   </a>
   
@@ -491,7 +545,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#added_1" class="md-nav__link">
+  <a href="#added_2" class="md-nav__link">
     Added
   </a>
   
@@ -535,6 +589,23 @@
 <p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,
 and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
 <h3 id="unreleased">Unreleased<a class="headerlink" href="#unreleased" title="Permanent link">&para;</a></h3>
+<h3 id="020---2022-05-04">[0.2.0] - 2022-05-04<a class="headerlink" href="#020---2022-05-04" title="Permanent link">&para;</a></h3>
+<h4 id="changed">Changed<a class="headerlink" href="#changed" title="Permanent link">&para;</a></h4>
+<ul>
+<li>command name changed to <code>dls</code> for <em>deluge ls</em>.</li>
+<li>removed cli script install.</li>
+<li>depends on deluge-card &gt;= 0.3.0.</li>
+<li><code>sdu ~/SD01 -ls</code> replaced by <code>dls ~/SD01 s</code> or <code>songs</code></li>
+<li><code>sdu ~/SD01 -la</code> replaced by <code>dls ~/SD01 a</code> or <code>samples</code></li>
+<li><code>sdu ~/SD01 -lS</code> replaced by <code>dls ~/SD01 ss</code> or <code>song_samples</code></li>
+<li>updated README.</li>
+</ul>
+<h4 id="added">Added<a class="headerlink" href="#added" title="Permanent link">&para;</a></h4>
+<ul>
+<li><code>-p</code>, <code>--pattern</code> option for globby path filtering. eg <code>dls ~/SD01 song_samples -p **/kick*</code></li>
+<li><code>-D</code>, <code>--debug</code> option for debugging output.</li>
+<li>added TLDR style usage docs.</li>
+</ul>
 <h3 id="014---2022-05-02">[0.1.4] - 2022-05-02<a class="headerlink" href="#014---2022-05-02" title="Permanent link">&para;</a></h3>
 <h4 id="fixed">Fixed<a class="headerlink" href="#fixed" title="Permanent link">&para;</a></h4>
 <ul>
@@ -542,13 +613,13 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 </ul>
 <h3 id="013---2022-05-02">[0.1.3] - 2022-05-02<a class="headerlink" href="#013---2022-05-02" title="Permanent link">&para;</a></h3>
 <h3 id="012---2022-05-02">[0.1.2] - 2022-05-02<a class="headerlink" href="#012---2022-05-02" title="Permanent link">&para;</a></h3>
-<h4 id="changed">Changed<a class="headerlink" href="#changed" title="Permanent link">&para;</a></h4>
+<h4 id="changed_1">Changed<a class="headerlink" href="#changed_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Removed dev-requirements from the published package.</li>
 <li>Depends on deluge-card &gt;= 0.2.3.</li>
 <li>Improved the Pypi classifiers.</li>
 </ul>
-<h4 id="added">Added<a class="headerlink" href="#added" title="Permanent link">&para;</a></h4>
+<h4 id="added_1">Added<a class="headerlink" href="#added_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>New script entry point <code>dsd</code>.</li>
 </ul>
@@ -556,7 +627,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <ul>
 <li>First release on PyPI.</li>
 </ul>
-<h4 id="added_1">Added<a class="headerlink" href="#added_1" title="Permanent link">&para;</a></h4>
+<h4 id="added_2">Added<a class="headerlink" href="#added_2" title="Permanent link">&para;</a></h4>
 <ul>
 <li>basic list features in sdu.py module</li>
 </ul>

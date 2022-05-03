@@ -446,20 +446,28 @@
 <li>PyPI: <a href="https://pypi.org/project/deluge-cmd/">https://pypi.org/project/deluge-cmd/</a></li>
 <li>Free software: MIT</li>
 </ul>
+<p>This project uses <a href="https://github.com/mupaduw/deluge-card">deluge-card</a> which provides a python API for the Deluge Folder System.</p>
 <h3 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h3>
 <ul>
-<li>verify Deluge Filesytem structure</li>
-<li>list songs </li>
-<li>list song attributes bpm, key, samples</li>
-<li>list samples (used/unused)</li>
+<li>list Songs Samples, and Song Samples on a Deluge Folder System (DFS).</li>
+<li>check Deluge Folder Systems.</li>
+<li>list useful attributes tempo, key, scale.</li>
+<li>filter on path patterns: e.g. list all "Kick" samples).</li>
 </ul>
+<p>e.g.</p>
+<div class="highlight"><pre><span></span><code>&gt;$ dls ~/Music/DELUGE/01 songs -p *001*
+Deluge filesystem at /homie/Music/DELUGE/01 mounted: False
+  DelugeSong(/homie/Music/DELUGE/01/SONGS/SONG001.XML) key C major tempo 96.0
+  DelugeSong(/homie/Music/DELUGE/01/SONGS/SONG001A.XML) key C major tempo 96.0
+  DelugeSong(/homie/Music/DELUGE/01/SONGS/SONG001B.XML) key C major tempo 108.0
+  DelugeSong(/homie/Music/DELUGE/01/SONGS/SONG001C.XML) key C major tempo 108.0
+  DelugeSong(/homie/Music/DELUGE/01/SONGS/SONG001D.XML) key C major tempo 96.0
+</code></pre></div>
 <h4 id="planned-features">Planned features<a class="headerlink" href="#planned-features" title="Permanent link">&para;</a></h4>
 <ul>
-<li>move songs, samples </li>
-<li>delete songs, samples</li>
-<li>posix-like glob filtering for list, move &amp; delete</li>
-<li>list instruments and types</li>
-<li>anything helpful for backward/forward migration of deluge SD cards having fw3.15 and 4.0 content.</li>
+<li>(d)cp, (d)mv and (d)rm commands.</li>
+<li>song groups (1, 1A, 1B, 1C).</li>
+<li>instruments, kits &amp; synths.</li>
 </ul>
 <h3 id="credits">Credits<a class="headerlink" href="#credits" title="Permanent link">&para;</a></h3>
 <p>This package was created with <a href="https://github.com/audreyr/cookiecutter">Cookiecutter</a> and the <a href="https://github.com/waynerv/cookiecutter-pypackage">waynerv/cookiecutter-pypackage</a> project template.</p>
