@@ -6,6 +6,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## [0.2.0] - 2022-05-04
+### Changed
+- command name changed to `dls` for *deluge ls*.
+- removed cli script install.
+- depends on deluge-card >= 0.3.0.
+- `sdu ~/SD01 -ls` replaced by `dls ~/SD01 s` or `songs`
+- `sdu ~/SD01 -la` replaced by `dls ~/SD01 a` or `samples`
+- `sdu ~/SD01 -lS` replaced by `dls ~/SD01 ss` or `song_samples`
+- updated README.
+
+### Added
+- `-p`, `--pattern` option for globby path filtering. eg `dls ~/SD01 song_samples -p **/kick*`
+- `-D`, `--debug` option for debugging output.
+- added TLDR style usage docs.
+
 ## [0.1.4] - 2022-05-02
 ### Fixed
 - Script entry point `dsd`.
