@@ -51,6 +51,9 @@ plugins:
   - mkdocstrings:
       watch:
         - deluge_cmd
+        - README.md
+        - CHANGELOG.md
+        - CONTRIBUTING.md 
 extra:
   social:
     # - icon: fontawesome/brands/twitter

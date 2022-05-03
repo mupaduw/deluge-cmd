@@ -6,9 +6,9 @@ import click
 @click.command()
 def main():
     """Main entrypoint."""
-    click.echo("deluge_cmd")
-    click.echo("=" * len("deluge_cmd"))
-    click.echo("cli tools to manage deluge sd card contents")
+    click.echo("deluge_cmd:cli")
+    click.echo("=" * len("deluge_cmd:cli"))
+    click.echo("cli does nothing - use deluge_dls instead")
 
 
 if __name__ == "__main__":
