@@ -25,7 +25,7 @@ This project uses [deluge-card](https://github.com/mupaduw/deluge-card) which pr
 e.g.
 
 ```
->$ dls ~/Music/DELUGE/01 songs -p *001*
+$> dls songs ~/Music/DELUGE/01 *001*
 Deluge filesystem at /homie/Music/DELUGE/01 mounted: False
   DelugeSong(/homie/Music/DELUGE/01/SONGS/SONG001.XML) key C major tempo 96.0
   DelugeSong(/homie/Music/DELUGE/01/SONGS/SONG001A.XML) key C major tempo 96.0
@@ -34,10 +34,28 @@ Deluge filesystem at /homie/Music/DELUGE/01 mounted: False
   DelugeSong(/homie/Music/DELUGE/01/SONGS/SONG001D.XML) key C major tempo 96.0
 ```
 
+## Experimental (backup first!)
+
+> Move your samples, and update the songs that reference them
+> 
+> which has some [missing prime-time features](https://github.com/mupaduw/deluge-card/issues/14)
+
+```
+$> dmv ~/Music/DELUGE/TEST/02 **/CR78* SAMPLES/ANOTHER_PLACE -vs
+~/Music/DELUGE/TEST/02/SONGS/SONG002A.XML update song xml
+~/Music/DELUGE/TEST/02/SONGS/SONG002.XML update song xml
+...
+~/Music/DELUGE/TEST/02/SAMPLES/ANOTHER_PLACE/CR78 Closed hihat.wav move file
+~/Music/DELUGE/TEST/02/SAMPLES/ANOTHER_PLACE/CR78 Metal.wav move file
+moved 14 samples, in 9 songs
+```
+
 ### Planned features
-- (d)cp, (d)mv and (d)rm commands.
+- (d)cp, and (d)rm commands.
+- support for v4.0+ nested folders
 - song groups (1, 1A, 1B, 1C).
 - instruments, kits & synths.
+
 
 ## Credits
 
