@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## [0.3.0] - 2022-05-12
+### Added
+- new **highly experimental** `dmv` command 
+
+### Changed
+- reordered `dls` args for easier auto-fill and compatability with new `dmv` and `ls`
+- `-p` is now the `pattern` argument (non-optional)
+- updated usage docs
+- requires deluge-card 0.4.2
+
 ## [0.2.0] - 2022-05-04
 ### Changed
 - command name changed to `dls` for *deluge ls*.
