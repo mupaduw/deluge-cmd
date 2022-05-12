@@ -1,5 +1,5 @@
 """Main dmv script."""
-
+# flake8: noqa
 import argparse
 import itertools
 from pathlib import Path
@@ -8,19 +8,20 @@ from deluge_card import list_deluge_fs
 from deluge_card.deluge_sample import mv_samples, validate_mv_dest
 
 
-def main():
-    """Main entrypoint."""
+def parse_args():
     parser = argparse.ArgumentParser(description='deluge_dmv.py (dmv)  - move deluge FS sample contents.')
-
     parser.add_argument('root', help='root folder, must be a valid Deluge file system.')
     parser.add_argument('pattern', help='glob pattern to match e.g. **/Clap*.wav')
     parser.add_argument('dest', help='target folder or file, which must be in a subfolder of root.')
-
     parser.add_argument("-v", "--verbose", help="increase output verbosity", action="store_true")
     parser.add_argument("-s", "--summary", help="summarise output", action="store_true")
     parser.add_argument('-D', '--debug', action="store_true", help="print debug statements")
-
     args = parser.parse_args()
+    return args
+
+
+def main(args):
+    """Main entrypoint."""
     if args.debug:
         print(f"Args: {args}")
 
@@ -52,4 +53,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()  # pragma: no cover
+    main(parse_args())  # pragma: no cover
