@@ -20,8 +20,7 @@ def parse_args():
     return args
 
 
-def main(args):
-    """Main entrypoint."""
+def handle_args(args):
     if args.debug:
         print(f"Args: {args}")
 
@@ -52,5 +51,9 @@ def main(args):
         print(f'moved {counters["move_file"]} samples, in {counters["update_song_xml"]} songs')
 
 
+def main():
+    handle_args(parse_args())
+
+
 if __name__ == '__main__':
-    main(parse_args())  # pragma: no cover
+    main()  # pragma: no cover

@@ -48,7 +48,7 @@ def parse_args():
     return args
 
 
-def main(args):
+def handle_args(args):
     if args.debug:
         print(f"Args: {args}")
 
@@ -64,5 +64,9 @@ def main(args):
                 list_song_samples(c, args)
 
 
+def main():
+    handle_args(parse_args())
+
+
 if __name__ == '__main__':
-    main(parse_args())  # pragma: no cover
+    main()  # pragma: no cover
