@@ -1,12 +1,16 @@
-# Usage
+# Usage (TLDR)
 
 Installing deluge-cmd will make the following available on your system:
 
-## dls
+## dls - deluge list
 
-> **dls** (also **deluge_ls**) lists objects such as Songs Samples, and SongSamples
+> **dls** (aka **deluge_dls.py**) lists objects such as Songs Samples, and SongSamples
 > found on a Deluge Folder System (DFS).
-> It's modelled after **[ls](https://tldr.ostera.io/ls)** (or **dir**).
+> It's modelled after **[ls](https://tldr.ostera.io/ls)**.
+
+- Print some help :
+
+`dls --help`
 
 - Print all the songs on a DFS: 
 
@@ -14,26 +18,66 @@ Installing deluge-cmd will make the following available on your system:
 
 - List songs where the path contains "002", "003" or "004" :
 
-`dls ~/Music/DELUGE/02 songs -p *00[2-4]*`
+`dls songs ~/Music/DELUGE/02 songs -p *00[2-4]*`
 
 - List samples where the path contains folder "/Kick/" :
 
-`dls ~/Music/DELUGE/02 samples -p **/Kick/**`
+`dls s ~/Music/DELUGE/02 **/Kick/*`
 
 - List the song samples where the path contains folder "Artists" :
 
-`dls ~/Music/DELUGE/02 song_samples -p **/Artists/**`
+`dls song_samples ~/Music/DELUGE/02 **/Artists/*`
 
-## future
+- Find the CR78 samples
 
-### dmkfs
+`dls samples ~/Music/DELUGE/TEST/02 **/CR78*.wav`
 
-### dcp
+```
+Deluge filesystem at ~/Music/DELUGE/TEST/02 mounted: False
+  Sample(path=PosixPath('~/Music/DELUGE/TEST/02/SAMPLES/DRUMS/Kick/CR78 Kick.wav'), settings=[])
+  Sample(path=PosixPath('~/Music/DELUGE/TEST/02/SAMPLES/DRUMS/Rim/CR78 Rim.wav'), settings=[])
+  ...
+  Sample(path=PosixPath('~/Music/DELUGE/TEST/02/SAMPLES/DRUMS/HatC/CR78 Closed hihat.wav'), settings=[])
+  Sample(path=PosixPath('~/Music/DELUGE/TEST/02/SAMPLES/DRUMS/ConH/CR78 Conga high.wav'), settings=[])
+Deluge filesystem DelugeCardFS(card_root=PosixPath('~/Music/DELUGE/TEST/02')) has 14 samples 
+```
 
-### dmv
+## dmv  - deluge move
 
-### drm
+> **dmv** (aka **deluge_dmv.py**) moves Song Samples, and updates references in SONG XML files on
+> a Deluge Folder System (DFS).
+> It's loosely modelled after **[mv](https://tldr.ostera.io/mv)**.
+>
+> **Important** this is **experimental and destructive!** Please backup your data first. Currently SYNTH & KIT references are NOT updated.
 
+- Print some help :
+
+`dmv --help`
+
+- Move your **CR78** samples, and update the songs that reference them : 
+
+```
+dmv ~/Music/DELUGE/TEST/02 **/CR78* SAMPLES/ANOTHER_PLACE -vs
+```
+
+```
+~/Music/DELUGE/TEST/02/SONGS/SONG002A.XML update song xml
+~/Music/DELUGE/TEST/02/SONGS/SONG002.XML update song xml
+...
+~/Music/DELUGE/TEST/02/SAMPLES/ANOTHER_PLACE/CR78 Closed hihat.wav move file
+~/Music/DELUGE/TEST/02/SAMPLES/ANOTHER_PLACE/CR78 Metal.wav move file
+moved 14 samples, in 9 songs
+```
+
+# Future
+
+## dcp - deluge copy
+
+Copy files and their references.
+
+## drm - deluge remove
+
+Remove files, cleaning up references.
 
 # About TLDR
 
