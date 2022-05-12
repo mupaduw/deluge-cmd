@@ -1,35 +1,25 @@
 #!/usr/bin/env python
 """Tests for `deluge_cmd` package."""
 
-import pytest
-from click.testing import CliRunner
+from unittest import mock, skip
+from deluge_cmd import deluge_dls, deluge_dmv
+from collections import namedtuple
 
-from deluge_cmd import cli
-
-
-@pytest.fixture
-def response():
-    """Sample pytest fixture.
-
-    See more at: http://doc.pytest.org/en/latest/fixture.html
-    """
-    # import requests
-    # return requests.get('https://github.com/audreyr/cookiecutter-pypackage')
+dls_args_tuple = namedtuple('dls_args_tuple', 'type root pattern debug')
 
 
-def test_content(response):
-    """Sample pytest test function with the pytest fixture as an argument."""
-    # from bs4 import BeautifulSoup
-    # assert 'GitHub' in BeautifulSoup(response.content).title.string
-    del response
+@mock.patch('deluge_cmd.deluge_dls.list_deluge_fs', return_value=[])
+def test_dls_command_line_interface(mocked):
+    args = dls_args_tuple('a', '.', '*', '')
+    deluge_dls.main(args)
+    assert mocked.call_count == 1
 
 
-def test_command_line_interface():
-    """Test the CLI."""
-    runner = CliRunner()
-    result = runner.invoke(cli.main)
-    assert result.exit_code == 0
-    assert 'deluge_cmd' in result.output
-    help_result = runner.invoke(cli.main, ['--help'])
-    assert help_result.exit_code == 0
-    assert '--help  Show this message and exit.' in help_result.output
+dmv_args_tuple = namedtuple('dmv_args_tuple', 'root pattern dest debug')
+
+
+@mock.patch('deluge_cmd.deluge_dmv.list_deluge_fs', return_value=[])
+def test_dmv_command_line_interface(mocked):
+    args = dmv_args_tuple('.', '*', 'SAMPLE/NEW', '')
+    deluge_dmv.main(args)
+    assert mocked.call_count == 1
