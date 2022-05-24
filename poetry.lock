@@ -166,7 +166,7 @@ test = ["pytest (>=6.2.0)", "pytest-benchmark", "pytest-cov", "pytest-subtests",
 
 [[package]]
 name = "deluge-card"
-version = "0.4.2"
+version = "0.7.0"
 description = "python api for synthstrom deluge cards from fw3.15+."
 category = "main"
 optional = false
@@ -1051,7 +1051,7 @@ test = []
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8,<4.0"
-content-hash = "f8583c62f63969525c212b00122c6f1f9141a14715145d708cb60fe5e89384cb"
+content-hash = "ca0d372f55e4d44b4b8136ed3ad3418a471afb392e7dbcc5cb45aca7faba5deb"
 
 [metadata.files]
 astunparse = [
@@ -1239,8 +1239,8 @@ cryptography = [
     {file = "cryptography-37.0.2.tar.gz", hash = "sha256:f224ad253cc9cea7568f49077007d2263efa57396a2f2f78114066fd54b5c68e"},
 ]
 deluge-card = [
-    {file = "deluge-card-0.4.2.tar.gz", hash = "sha256:911162907d0b37f33de5c32b40f28508b162ce39ce82791a65b79d133037f225"},
-    {file = "deluge_card-0.4.2-py3-none-any.whl", hash = "sha256:2abcef22fc5fbe540c7e7358b1c24de1b8d057705cc1926d22dfa9c2bd3edbdf"},
+    {file = "deluge-card-0.7.0.tar.gz", hash = "sha256:a4003c11fa97c74e06ef63be556f6071f9fa5428439b1eeb08ec5b11c7cd5a14"},
+    {file = "deluge_card-0.7.0-py3-none-any.whl", hash = "sha256:804b5898c2dc32f47860d41d98518a8bec708507a920e300c069154de51fa961"},
 ]
 distlib = [
     {file = "distlib-0.3.4-py2.py3-none-any.whl", hash = "sha256:6564fe0a8f51e734df6333d08b8b94d4ea8ee6b99b5ed50613f731fd4089f34b"},
