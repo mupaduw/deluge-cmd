@@ -48,7 +48,7 @@ Deluge filesystem DelugeCardFS(card_root=PosixPath('~/Music/DELUGE/TEST/02')) ha
 > a Deluge Folder System (DFS).
 > It's loosely modelled after **[mv](https://tldr.ostera.io/mv)**.
 >
-> **Important** this is **experimental and destructive!** Please backup your data first. Currently SYNTH & KIT references are NOT updated.
+> **Important** this is **experimental and possibly destructive!** Please backup your data first. 
 
 - Print some help :
 
@@ -61,11 +61,11 @@ dmv ~/Music/DELUGE/TEST/02 **/CR78* SAMPLES/ANOTHER_PLACE -vs
 ```
 
 ```
-~/Music/DELUGE/TEST/02/SONGS/SONG002A.XML update song xml
-~/Music/DELUGE/TEST/02/SONGS/SONG002.XML update song xml
+~/Music/DELUGE/TEST/02/SONGS/SONG002A.XML update_song_xml
+~/Music/DELUGE/TEST/02/SONGS/SONG002.XML update_song_xml
 ...
-~/Music/DELUGE/TEST/02/SAMPLES/ANOTHER_PLACE/CR78 Closed hihat.wav move file
-~/Music/DELUGE/TEST/02/SAMPLES/ANOTHER_PLACE/CR78 Metal.wav move file
+~/Music/DELUGE/TEST/02/SAMPLES/ANOTHER_PLACE/CR78 Closed hihat.wav move_file
+~/Music/DELUGE/TEST/02/SAMPLES/ANOTHER_PLACE/CR78 Metal.wav move_file
 moved 14 samples, in 9 songs
 ```
 
