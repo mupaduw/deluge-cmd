@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## [0.4.0] - 2022-05-24
+### Added
+ - dmv now updates KIT and SYNTH as well as SONG files.
+ - more usage
+
+## Changed
+ - updated to use deluge-card
+
 ## [0.3.2] - 2022-05-12
 ## Added
  - fix main()
